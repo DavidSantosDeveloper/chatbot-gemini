@@ -40,6 +40,10 @@ const createMessageElement = (content, ...classes) => {
 document.getElementById('formulario').addEventListener('submit', (evento) => {
   evento.preventDefault()
 
+});
+
+document.getElementById('uploadButton').addEventListener('click', (evento) => {
+  evento.preventDefault()
   const fileInput = document.getElementById('fileInput');
   const file = fileInput.files[0];
   
@@ -69,11 +73,6 @@ document.getElementById('formulario').addEventListener('submit', (evento) => {
     console.error('Error:', error);
   });
   
-});
-
-document.getElementById('uploadButton').addEventListener('click', (evento) => {
-
-
 });
 
 // Show typing effect by displaying words one by one
